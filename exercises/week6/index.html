@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document</title>
+</head>
+
+
+<body>
+<button id="buttonPrev">Previous fortune</button>
+<button id="buttonNext">Next fortune</button>
+<button id="buttonRandom">Random fortune</button>
+<div id="output"></div>
+
+<script>
+// Store all of our fortunes as HTML strings in an array
+let fortunes = [
+"You will have a <span style='font-size: 40px; color: blue;'>GLORIOUS</span> day.",
+"You will consume much <span style='letter-spacing: 1em; color: orange;'>cheese</span>.",
+"YOU ARE GOING TO <span style='font-size: 100px; color: magenta; '> BILLIONAIRE</span> right now.",
+"happiness is <span style='font-style: italic; font-size: 10px; color: rgb(150, 160, 0);'>creeping</span> upon you...",
+"You were Made For <span style=\"font-family: 'Comic Sans MS', 'Comic Sans', cursive; font-size: 150px; color: gold;\">Success...</span> <br> and you know what? <br> you <br> <span style=\"font-family: 'Comic Sans MS', 'Comic Sans', cursive; font-size: 75px; color: gold;\">Deserve it.</span>",
+"You were Made For <span style=\"font-family: 'UnifrakturMaguntia', cursive; font-weight: 1200; font-size: 150px; color: red;\">toiling...</span> <br> and you know what? <br> <br> <span style=\"font-family: 'UnifrakturMaguntia', cursive; font-weight: 1200; font-size: 15px; color: red;\">YOU DESERVE IT.</span>",
+"one day you will <br> <span style=\"font-family: 'Comic Sans MS', ComicSans, cursive; style=font-size: 100px; color: blue;\">DIE.</span>",
+"BREH",
+"hello",
+"What a fortune you have",
+"It's not looking good...",
+"You have Six Months to live.",
+"You're pregnant",
+]
+
+// Variable to track our current index (i.e. fortune) in the array
+let index = 0;
+
+// Function to update the displayed fortune
+function updateFortune() {
+let output = document.querySelector('#output');
+output.innerHTML = fortunes[index];
+console.log(index); // to help with debugging!
+}
+
+function randomArrayIndex(array) {
+return Math.floor(Math.random()*array.length);
+}
+// Run the function immediately to show the first fortune
+updateFortune();
+
+// Target all of our elements
+let buttonPrev = document.querySelector("#buttonPrev");
+let buttonNext = document.querySelector("#buttonNext");
+let buttonRandom = document.querySelector("#buttonRandom");
+
+// Add event listeners to all of our elements (like inline event handlers)
+buttonPrev.addEventListener('click', prevFortune);
+buttonNext.addEventListener('click', nextFortune);
+buttonRandom.addEventListener('click', randomFortune);
+
+// ————————————————————————————
+// FUNCTIONS FOR YOU TO FINISH!
+
+function nextFortune() {
+index = index + 1; // same thing as writing index++;
+if (index == fortunes.length) {
+index = 1;
+}
+
+updateFortune(index);
+}
+
+function prevFortune() {
+index = index - 1;
+if (index == fortunes.length) {
+index = fortunes.length - 1;
+}
+
+else if (index < 0) {
+index = fortunes.length - 1;
+}
+
+updateFortune(index);
+}
+
+
+// Helper function to get a random item from an array
+
+
+
+function randomFortune() {
+// TODO
+
+index = randomArrayIndex(fortunes)
+updateFortune(index);
+}
+
+</script>
+</body>
+</html>

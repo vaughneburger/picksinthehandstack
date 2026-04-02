@@ -1,0 +1,119 @@
+/* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: Helvetica, Arial, sans-serif;
+	color: magenta;
+}
+
+html,
+body {
+	height: 100%;
+	margin: 0;
+}
+
+body {
+	min-height: 100vh;
+	background-image: url("assets/somewherecold.png");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 100% 100%;
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.header {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+	gap: 10px;
+	padding: 20px;
+	text-align: center;
+}
+
+.links {
+	display: grid;
+	grid-template-columns: repeat(4, 15%);
+	gap: 20px;
+	justify-content: center;
+	margin: 40px auto;
+}
+
+.links-card {
+	width: 100%;
+	height: 100%;
+	border: 2px solid rgb(255, 0, 247);
+	text-decoration: none;
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	padding: 10px;
+	overflow: hidden;
+}
+
+.links-card h2,
+.links-card p {
+	max-width: 100%;
+	overflow-wrap: break-word;
+	word-break: break-word;
+}
+
+.links-card p {
+	font-size: 6px;
+	line-height: 1.2;
+	max-width: 25ch;
+}
+
+/* Interface */
+* {
+	box-sizing: border-box;
+}
+body {
+	font-family: sans-serif;
+}
+.title {
+	text-align: center;
+}
+.controls {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	gap: 5px;
+	padding: 20px;
+}
+.controls-buttons {
+	display: flex;
+	justify-content: center;
+	gap: 5px;
+}
+#container {
+	transition: 0.7s;
+	width: 100%;
+	max-width: 100vw;
+	overflow-wrap: anywhere;
+	white-space: normal;
+}
+
+/* Finished class example */
+.example2 {
+	margin: 0 auto;
+	max-width: 40em;
+	padding: 20px;
+	font-family: sans-serif;
+	color: #333;
+	font-size: 24px;
+	line-height: 1.4em;
+}
+
+/* Write your CSS code below! */
+.something2 {
+	margin: auto;
+	padding: 150px;
+	box-sizing: border-box;
+	font-family: Helvetica, Arial, sans-serif, bold;
+	color: magenta;
+}

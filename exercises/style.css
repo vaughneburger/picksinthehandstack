@@ -45,3 +45,9 @@ html, body{
     font-size: 30px;
 }
 
+#ON.cell{
+    transform: scale(1.05);
+    background: rgba(0, 255, 17, 0.756);
+    font-size: 30px;
+
+}

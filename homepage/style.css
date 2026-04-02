@@ -1,0 +1,53 @@
+/* style.css */
+html, body{
+    height: 100%;
+    margin: 0;
+    font-family: "Bitcount Ink", sans-serif;
+}
+
+.home{
+    height: 100vh;
+    display: grid;
+    gap: 0px;
+    padding: 0px;
+    overflow: hidden;    
+
+    grid-template-rows: repeat(10, 1fr);          
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); 
+
+    font-size: 0%;
+}
+
+.cell{
+    overflow: hidden;
+    background: rgba(255, 255, 255, 0.05);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 3px;
+    
+    transition: transform 70ms ease, background 350ms ease;
+}
+
+#crazytroll:hover{
+    transform: scale(1.05);
+    background: rgba(0, 255, 17, 0.756);
+    font-size: 1.5vh;
+}
+.cell:hover{
+    transform: scale(1.05);
+    background: rgba(30, 255, 30, 0.16);
+}
+
+#correct.cell:hover{
+    transform: scale(1.05);
+    background: rgba(0, 255, 17, 0.756);
+    font-size: 30px;
+}
+
+#ON.cell{
+    transform: scale(1.05);
+    background: rgba(0, 255, 17, 0.756);
+    font-size: 30px;
+
+}
