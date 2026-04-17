@@ -1,0 +1,92 @@
+/* LOL */
+
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    font-family: monospace;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+header {
+    height: 200px;
+    background: rgb(255, 0, 255);
+    flex-shrink: 0;
+    padding: 3px;
+    box-sizing: border-box;
+}
+
+#headerimgwrap_00 {
+    width: 100%;
+    height: 100%;
+    background-image: url("../assets/eden.png");
+    background-size: cover;
+    background-position: center;
+    padding: clamp(15px, 1.5vw, 20px);
+    box-sizing: border-box;
+}
+
+#headerimgwrap_01 {
+    font-size: clamp(10px, 2vw, 100px);
+    color:rgb(255, 0, 255);
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-image: url("../assets/icesheet.png");
+    background-size: cover;
+    background-position: center;
+}
+
+
+.coordinates {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#coords {
+    margin: 0;
+    text-align: center;
+}
+
+
+main {
+    flex: 1;
+    background: rgb(255, 0, 255);
+    padding: 3px;
+    box-sizing: border-box;
+
+}
+
+#map {
+    width: 100%;
+    height: 100%;
+}
+
+#button_row {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 60vw;   
+}
+
+.btn {
+    font-size: 2vh;
+    font-family: monospace;
+    color: rgb(255, 0, 255);
+}
+
+.btn:hover {
+    background-color: rgba(0 0 0 0);
+}
